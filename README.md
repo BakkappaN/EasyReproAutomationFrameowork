@@ -8,4 +8,5 @@ The topics covered in Testers Talk Youtube channel - Automate Microsoft Dynamics
 5) ## Create a record & Search the record
 6) ## Selecting Views, Create, Search & Delete the record
 7) ## SubGrids, Quick Create Forms & Switch Between TABS
+8) ## Execute scripts on Chrome browser and Edge browsers
 
