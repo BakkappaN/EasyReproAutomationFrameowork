@@ -386,8 +386,8 @@ namespace Microsoft.Dynamics365.UIAutomation.Api.UCI
             { "Grid_ChartViewList"           , "//ul[contains(@role,'listbox')]"},
             { "Grid_SortColumn",            "//div[@data-type='Grid']//div[@title='[COLNAME]']//div[contains(@class,'header')]"},
             { "Grid_CellContainer"    ,"//div[@role='grid'][@data-id='grid-cell-container']"},
-            { "Grid_ViewSelector"   , "//span[contains(@id,'ViewSelector')]" },
-            { "Grid_ViewContainer"   , "//ul[contains(@id,'ViewSelector')]" },
+            { "Grid_ViewSelector"   , "//*[contains(@id,'ViewSelector')]" },
+            { "Grid_ViewContainer"   , "//ul[contains(@class,'ContextualMenu-list is-open')]" },
             { "Grid_SubArea"   , "//*[contains(@data-id,'[NAME]')]"},
             
 
@@ -577,7 +577,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api.UCI
             { "Dialog_ActualRevenue", "//input[contains(@data-id,'actualrevenue_id')]" },
             { "Dialog_CloseDate", "//input[contains(@data-id,'closedate_id')]" },
             { "Dialog_DescriptionId", "//input[contains(@data-id,'description_id')]" },
-            { "Dialog_ConfirmButton" , "//*[@id=\"confirmButton\"]" },
+            { "Dialog_ConfirmButton" , "//*[contains(@id,'confirmButton_')]" },
             { "Dialog_CancelButton" , "//*[@id=\"cancelButton\"]" },
             { "DuplicateDetectionDialog_IgnoreAndSaveButton" , "//button[contains(@data-id, 'ignore_save')]" },
             { "DuplicateDetectionDialog_CancelButton" , "//button[contains(@data-id, 'close_dialog')]" },

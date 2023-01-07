@@ -34,6 +34,8 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample.UCI
 
                 xrmApp.Entity.SetValue("name", TestSettings.GetRandomString(5,15));
 
+                xrmApp.Entity.SetValue("telephone1", "1234567897");
+
                 xrmApp.Entity.Save();
                 
             }

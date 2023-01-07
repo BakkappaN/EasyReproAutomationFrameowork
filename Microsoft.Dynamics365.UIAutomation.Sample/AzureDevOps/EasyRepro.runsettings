@@ -40,9 +40,9 @@
   </DataCollectionRunSettings>
   <!-- Parameters used by tests at runtime -->
   <TestRunParameters>
-    <Parameter name="OnlineUsername" value="bakkappa.1si11is400@gmail.com" />
-    <Parameter name="OnlinePassword" value="Bosch@1234" />
-    <Parameter name="OnlineCrmUrl" value="https://org1fdad731.crm8.dynamics.com/" />
+    <Parameter name="OnlineUsername" value="" />
+    <Parameter name="OnlinePassword" value="" />
+    <Parameter name="OnlineCrmUrl" value="" />
     <Parameter name="BrowserType" value="Chrome" />
     <Parameter name="AzureKey" value="" />
   </TestRunParameters>

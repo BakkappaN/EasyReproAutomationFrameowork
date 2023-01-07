@@ -1448,13 +1448,13 @@ namespace Microsoft.Dynamics365.UIAutomation.Api.UCI
                 var result = new Dictionary<string, IWebElement>();
                 foreach (var viewItem in viewItems)
                 {
-                    var role = viewItem.GetAttribute("role");
+                   /* var role = viewItem.GetAttribute("role");
                     if (role != "option")
-                        continue;
+                        continue;*/
 
                     var key = viewItem.Text.ToLowerString();
-                    if (string.IsNullOrWhiteSpace(key))
-                        continue;
+                   /* if (string.IsNullOrWhiteSpace(key))
+                        continue;*/
 
                     if (!result.ContainsKey(key))
                         result.Add(key, viewItem);
@@ -1534,24 +1534,29 @@ namespace Microsoft.Dynamics365.UIAutomation.Api.UCI
             ThinkTime(thinkTime);
             return Execute(GetOptions("Open Grid Record"), driver =>
             {
-                var xpathToGrid = By.XPath(AppElements.Xpath[AppReference.Grid.Container]);
-                IWebElement control = driver.WaitUntilAvailable(xpathToGrid);
+                ThinkTime(3000);
+              
+                IWebElement checkbox = driver.FindElement(By.XPath("//*[@tabindex='0' and @role='checkbox']"));
+                Actions actions = new Actions(driver);
+                actions.MoveToElement(checkbox).Click().Build().Perform();
 
-                Func<Actions, Actions> action;
-                if (checkRecord)
-                    action = e => e.Click();
-                else
-                    action = e => e.DoubleClick();
+                /*  IWebElement control = driver.WaitUntilAvailable(xpathToGrid);
 
-                var xpathToCell = By.XPath($".//div[@data-id='cell-{index}-1']");
-                control.WaitUntilClickable(xpathToCell,
-                    cell =>
-                    {
-                        var emptyDiv = cell.FindElement(By.XPath(AppElements.Xpath[AppReference.Grid.RowsContainerCheckbox]));
-                        driver.Perform(action, cell, cell.LeftTo(emptyDiv));
-                    },
-                    $"An error occur trying to open the record at position {index}"
-                );
+                  Func<Actions, Actions> action;
+                  if (checkRecord)
+                      action = e => e.Click();
+                  else
+                      action = e => e.DoubleClick();
+
+                  var xpathToCell = By.XPath($".//div[@data-id='cell-{index}-1']");
+                  control.WaitUntilClickable(xpathToCell,
+                      cell =>
+                      {
+                          var emptyDiv = cell.FindElement(By.XPath(AppElements.Xpath[AppReference.Grid.RowsContainerCheckbox]));
+                          driver.Perform(action, cell, cell.LeftTo(emptyDiv));
+                      },
+                      $"An error occur trying to open the record at position {index}"
+                  );*/
 
                 driver.WaitForTransaction();
                 return true;

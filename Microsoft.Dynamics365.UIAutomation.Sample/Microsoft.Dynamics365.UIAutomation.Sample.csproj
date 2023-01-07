@@ -43,6 +43,7 @@
     <Reference Include="Microsoft.ApplicationInsights, Version=2.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.11.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.MSXML, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -52,6 +53,7 @@
       <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.6.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -64,6 +66,8 @@
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebDriver, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.4.2.0\lib\net48\WebDriver.dll</HintPath>
     </Reference>
@@ -101,6 +105,7 @@
     <Compile Include="UCI\CommandBar\SelectDashboard.cs" />
     <Compile Include="ConsoleTraceListener.cs" />
     <Compile Include="UCI\Controls\Grid.cs" />
+    <Compile Include="UCI\Create\EasyReproTutorial.cs" />
     <Compile Include="UCI\Create\CreateAccount.cs" />
     <Compile Include="UCI\Create\CreateCase.cs" />
     <Compile Include="UCI\Create\CreateContact.cs" />
@@ -254,7 +259,9 @@
     <None Include="UCI\UnifiedInterface.orderedtest" />
     <None Include="Web\WebClient.orderedtest" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="testdata.xml" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.Dynamics365.UIAutomation.Api.UCI\Microsoft.Dynamics365.UIAutomation.Api.UCI.csproj">
       <Project>{afcb5bb5-4512-4019-a911-5d56cff4f3d0}</Project>
