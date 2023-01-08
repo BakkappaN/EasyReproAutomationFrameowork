@@ -2,7 +2,7 @@
 The topics covered in Testers Talk Youtube channel - Automate Microsoft Dynamics 365 CRM Application using Easy Repro Framework Selenium C#
 
 1) ## Introduction, Setup working EasyRepro Automation Framework, Execute first automation script 
-- https://youtu.be/pKR2a4pcfdg
+Link - https://youtu.be/pKR2a4pcfdg
 
 2) ## Xpath, Input Text field, Click, CRM Application, CICD Pipeline file and MFA Secret Key
 
