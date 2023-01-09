@@ -18,3 +18,6 @@ Link - https://youtu.be/pKR2a4pcfdg
 
 8) ## Execute scripts on Chrome browser and Edge browsers
 
+9) ## Data Driver Testing or Data Driven Framework
+
+
