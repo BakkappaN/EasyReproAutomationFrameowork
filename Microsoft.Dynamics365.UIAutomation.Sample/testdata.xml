@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <xml>
-	<TestData>
-		<tag1>Testers Talk</tag1>	
-		<tag2>Testers Talk</tag2>
-	</TestData>
+	<testdata>
+		<tag1>Testers Talk1</tag1>
+		<tag2>Testers Talk by bakkappa</tag2>
+	</testdata>
+	
+	<testdata>
+		<tag1>Testers Talk2</tag1>
+		<tag2>Testers Talk by bakkappa</tag2>
+	</testdata>
+
 
 </xml>

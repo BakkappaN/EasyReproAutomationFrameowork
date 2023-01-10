@@ -167,24 +167,26 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample.UCI
         [TestCategory("TestersTalk")]
         [DeploymentItem("|DataDirectory|\\testdata.xml")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML",
-            "|DataDirectory|\\testdata.xml",
-            "TestData",
-            DataAccessMethod.Sequential)]
-        public void EasyReproTestDemo()
+        "|DataDirectory|\\testdata.xml",
+         "testdata",
+        DataAccessMethod.Sequential)]
+        public void EasyReproDataDrivenTesting()
         {
             var client = new WebClient(TestSettings.Options);
             using (var xrmApp = new XrmApp(client))
             {
                 xrmApp.OnlineLogin.Login(_xrmUri, _username, _password, _mfaSecretKey);
-                Console.WriteLine(TestContext.DataRow["tag1"]);
+                xrmApp.Navigation.OpenApp(UCIAppName.Sales);
+                xrmApp.Navigation.OpenSubArea("Sales", "Accounts");
 
+                xrmApp.CommandBar.ClickCommand("New");
+
+                xrmApp.Entity.SetValue("name", TestContext.DataRow["tag1"].ToString());
+                xrmApp.Entity.Save();
+
+                xrmApp.ThinkTime(4000);
             }
         }
-
-     
-        
-
-
 
     }
 }

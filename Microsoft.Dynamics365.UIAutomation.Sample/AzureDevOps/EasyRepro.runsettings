@@ -49,7 +49,7 @@
   <!-- Adapter Specific sections -->
 
   <!-- MSTest adapter -->
-  <!--
+	<!-- 
   <MSTest>
     <MapInconclusiveToFailed>True</MapInconclusiveToFailed>
     <CaptureTraceOutput>false</CaptureTraceOutput>
@@ -58,6 +58,6 @@
     <AssemblyResolution>
       <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-  </MSTest>
-  -->
+  </MSTest>-->
+  
 </RunSettings>

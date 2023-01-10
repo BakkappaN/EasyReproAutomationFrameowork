@@ -260,9 +260,6 @@
     <None Include="Web\WebClient.orderedtest" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="testdata.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Microsoft.Dynamics365.UIAutomation.Api.UCI\Microsoft.Dynamics365.UIAutomation.Api.UCI.csproj">
       <Project>{afcb5bb5-4512-4019-a911-5d56cff4f3d0}</Project>
       <Name>Microsoft.Dynamics365.UIAutomation.Api.UCI</Name>
@@ -275,6 +272,9 @@
       <Project>{c9748803-f3cb-4531-b313-bc24d4d0bf0c}</Project>
       <Name>Microsoft.Dynamics365.UIAutomation.Browser</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="testdata.xml" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
