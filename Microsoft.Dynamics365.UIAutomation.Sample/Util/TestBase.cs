@@ -87,8 +87,8 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample.Util
                 {
                     xrmPage.Browser.Driver.Manage().Window.Size = new Size(1920, 1080);
                 }
-                var currentDataandTime = testContextInstance.TestName + "_" + DateTime.Now.ToString("MM_dd_yyyy_hh_mm_ss");
-                string fileName = string.Format("Failed - " + currentDataandTime + ".jpeg", testContextInstance.TestResultsDirectory);
+                var currentDateandTime = testContextInstance.TestName + "_" + DateTime.Now.ToString("MM_dd_yyyy_hh_mm_ss");
+                string fileName = string.Format("Failed - " + currentDateandTime + ".jpeg", testContextInstance.TestResultsDirectory);
                 xrmPage.Browser.TakeWindowScreenShot(fileName, ScreenshotImageFormat.Jpeg);
                 testContextInstance.AddResultFile(fileName);
             }
