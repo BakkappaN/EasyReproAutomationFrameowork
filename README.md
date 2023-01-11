@@ -5,6 +5,7 @@ The topics covered in Testers Talk Youtube channel - Automate Microsoft Dynamics
 Link - https://youtu.be/pKR2a4pcfdg
 
 2) ## Xpath, Input Text field, Click, CRM Application, CICD Pipeline file and MFA Secret Key
+Link - https://youtu.be/vS1RHu71-Z8
 
 3) ## Lookup field, How to select different TABS & Dropdown list selection
 
