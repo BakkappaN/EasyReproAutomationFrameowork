@@ -15,6 +15,7 @@ The topics covered in Testers Talk Youtube channel - Automate Microsoft Dynamics
 
 
 4) ### Date fields, Assign Priority to test script & Grouping TC's or test scripts
+# Link - https://youtu.be/Sg8TlbOoikA
 
 5) ### Create a record & Search the record
 
