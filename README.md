@@ -27,7 +27,8 @@ The topics covered in Testers Talk Youtube channel - Automate Microsoft Dynamics
 
 9) ### Data Driven Testing or Data Driven Framework
 
-10) ### Take screenshot when Test Script failed
+10) ### Take screenshot when Test Script failed 
+- For more info refer to "TestBase" class inherited in Script class
 
 ![image](https://user-images.githubusercontent.com/22426896/213454901-2255d529-c0ee-40e1-b473-eed35985cd5d.png)
 
