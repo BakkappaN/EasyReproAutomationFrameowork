@@ -1,21 +1,21 @@
 ## Easy Repro Automation Framework Content ##  
-  ## Playlist - https://youtube.com/playlist?list=PLUeDIlio4THFl64e0ifCQsVeATBy152Xc
+  # Full Course - https://youtu.be/x0cHZ3E7Ekw
 The topics covered in Testers Talk Youtube channel - Automate Microsoft Dynamics 365 CRM Application using Easy Repro Framework Selenium C#
 
 1) ### Introduction, Setup working EasyRepro Automation Framework, Execute first automation script 
-# Link - https://youtu.be/pKR2a4pcfdg #
+# Link - https://www.youtube.com/watch?v=pKR2a4pcfdg&list=PLUeDIlio4THFl64e0ifCQsVeATBy152Xc&index=1
 
 
 2) ### Xpath, Input Text field, Click, CRM Application, CICD Pipeline file and MFA Secret Key
-# Link - https://youtu.be/vS1RHu71-Z8
+# Link - https://www.youtube.com/watch?v=vS1RHu71-Z8&list=PLUeDIlio4THFl64e0ifCQsVeATBy152Xc&index=2
 
 
 3) ### Lookup field, How to select different TABS & Dropdown list selection
-# Link - https://youtu.be/fc9e5lHfGGI
+# Link - https://www.youtube.com/watch?v=fc9e5lHfGGI&list=PLUeDIlio4THFl64e0ifCQsVeATBy152Xc&index=3
 
 
 4) ### Date fields, Assign Priority to test script & Grouping TC's or test scripts
-# Link - https://youtu.be/Sg8TlbOoikA
+# Link - https://www.youtube.com/watch?v=Sg8TlbOoikA&list=PLUeDIlio4THFl64e0ifCQsVeATBy152Xc&index=4
 
 5) ### Create a record & Search the record
 
