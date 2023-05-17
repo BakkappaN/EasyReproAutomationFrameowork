@@ -11,7 +11,7 @@ The topics covered in Testers Talk Youtube channel - Automate Microsoft Dynamics
 
 
 3) ### Lookup field, How to select different TABS & Dropdown list selection
-### Link - https://www.youtube.com/watch?v=fc9e5lHfGGI&list=PLUeDIlio4THFl64e0ifCQsVeATBy152Xc&index=4
+#### Link - https://www.youtube.com/watch?v=fc9e5lHfGGI&list=PLUeDIlio4THFl64e0ifCQsVeATBy152Xc&index=4
 
 
 4) ### Date fields, Assign Priority to test script & Grouping TC's or test scripts
